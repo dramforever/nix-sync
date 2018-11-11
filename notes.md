@@ -20,6 +20,7 @@ A mirror would probably consist of the following directories:
 - Latest version of all channels
 - For `nix-channel --update`
 - Contains `iso` images and `ova` appliances for NixOS.
+- `binary-cache-url`: Replace with mirror's
 
 ### Cloning
 
