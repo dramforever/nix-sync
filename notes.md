@@ -32,7 +32,8 @@ A mirror would probably consist of the following directories:
 ### Contents
 
 - Binary archive closure of channels
-  - Might need to get older releases of channels. Example: if `nixpkgs-unstable` updated twice between polls (`A` &rarr; `B` &rarr; `C`), we want to get closure of `B` as well, because some users might still be on `B`
+  - Might need to get older releases of channels. Example: if `nixpkgs-un
+stable` updated twice between polls (`A` &rarr; `B` &rarr; `C`), we want to get closure of `B` as well, because some users might still be on `B`
   - `https://channels.nix.gsc.io/` provides historical channel URLs and timestamps (of commit). Shoutout to @grahamc.
 - `$channel/store-paths.xz` &rarr; Find closure &rarr; Download all `.narinfo` and `.nar.{xz,bz2}`
   - Turns out `store-paths.xz` is not closure. Nothing much we can do, I think
@@ -41,6 +42,7 @@ A mirror would probably consist of the following directories:
 ### Cloning
 
 - Steps:
+  - Find recent channel releases. Check `Released on {date} {time} from` line.
   - Uncompress new `store-paths.xz` files
   - Find closures
   - Download `.nar.{xz,bz2}` files and write down corresponding `.narinfo` files
