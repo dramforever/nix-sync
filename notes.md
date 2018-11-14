@@ -40,6 +40,7 @@ A mirror would probably consist of the following directories:
       - Atomicity: Read the HTTP 302 redirection once, use it for all file downloads
     - We simply do not care about missed channels
     - Store a 'last touched' time for all entries
+      - Use 'Released on {date} {time} from' line in channels
       - Cache eviction by 'Least recently touched'
     - Property: If user only uses `$mirror/channels`, the '`A` &rarr; `B` &rarr; `C` problem' in option A never occurs
     - Users should either:
